@@ -288,6 +288,57 @@ export const Checks: React.FC = () => {
           Radio
         </label>
       </div>
+      <h2>Outline Styles</h2>
+      <div>
+        <input
+          type='checkbox'
+          className='btn-check'
+          id='btn-check-outlined'
+          autoComplete='off'
+        />
+        <label className='btn btn-outline-primary' htmlFor='btn-check-outlined'>
+          Single toggle
+        </label>
+        <br />
+
+        <input
+          type='checkbox'
+          className='btn-check'
+          id='btn-check-2-outlined'
+          checked
+          autoComplete='off'
+        />
+        <label
+          className='btn btn-outline-secondary'
+          htmlFor='btn-check-2-outlined'
+        >
+          Checked
+        </label>
+        <br />
+
+        <input
+          type='radio'
+          className='btn-check'
+          name='options-outlined'
+          id='success-outlined'
+          autoComplete='off'
+          checked
+        />
+        <label className='btn btn-outline-success' htmlFor='success-outlined'>
+          Checked success radio
+        </label>
+
+        <input
+          type='radio'
+          className='btn-check'
+          name='options-outlined'
+          id='danger-outlined'
+          autoComplete='off'
+        />
+        <label className='btn btn-outline-danger' htmlFor='danger-outlined'>
+          Danger radio
+        </label>
+      </div>
     </>
   );
 };
