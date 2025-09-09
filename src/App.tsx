@@ -3,6 +3,7 @@ import { Accordion } from './components/Accordion';
 import { Buttons } from './components/ Buttons';
 import { Checks } from './components/Checks';
 import { Containers } from './components/Containers';
+import { Grid } from './components/Grid';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Buttons />
       <Checks />
       <Containers />
+      <Grid />
     </div>
   );
 }
