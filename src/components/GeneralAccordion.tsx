@@ -12,21 +12,24 @@ export const GeneralAccordion: React.FC<GeneralAccordionProps> = ({
 }) => {
   return (
     <>
-      <div className='accordion accordion-flush' id='accordionFlushExample'>
+      <div
+        className='accordion accordion-flush'
+        id={`accordion-parent-${title.trim()}`}
+      >
         <div className='accordion-item'>
           <button
             className='accordion-button collapsed'
             type='button'
             data-bs-toggle='collapse'
-            data-bs-target='#flush-collapseOne'
+            data-bs-target={`#flush-collapseOne${title.trim()}`}
             aria-expanded='false'
-            aria-controls='flush-collapseOne'
+            aria-controls={`flush-collapseOne${title.trim()}`}
           >
             {title}
           </button>
         </div>
         <div
-          id='flush-collapseOne'
+          id={`flush-collapseOne${title.trim()}`}
           className='accordion-collapse collapse'
           aria-labelledby='flush-headingOne'
         >

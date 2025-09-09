@@ -6,12 +6,13 @@ import { Buttons } from './components/ Buttons';
 import { Checks } from './components/Checks';
 import { Containers } from './components/Containers';
 import { Grid } from './components/Grid';
+import { Columns } from './components/Columns';
 
 function App() {
   return (
     <>
       <GeneralAccordion
-        title='Varios Componentes'
+        title='Varios'
         node={
           <>
             <Practice />
@@ -23,6 +24,7 @@ function App() {
           </>
         }
       />
+      <GeneralAccordion title='Columnas' node={<Columns />} />
     </>
   );
 }
